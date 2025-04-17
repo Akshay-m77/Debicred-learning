@@ -10025,3 +10025,9 @@ h6,
   margin-top: 40px;
 
 }
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
