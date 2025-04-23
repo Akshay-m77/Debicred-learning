@@ -10175,4 +10175,98 @@ h6,
       text-decoration: none;
       color: inherit;
     }
-    
+ 
+
+    /* WhatsApp Icon Styling */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;  /* Adjust as needed */
+  right: 20px;   /* Adjust as needed */
+  background-color: #25D366; /* WhatsApp green color */
+  border-radius: 50%;  /* Makes the icon circular */
+  width: 60px;        /* Set a fixed width */
+  height: 60px;       /* Set a fixed height to match the width */
+  display: flex;      /* Flexbox to center the icon */
+  align-items: center;  /* Center the icon vertically */
+  justify-content: center;  /* Center the icon horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  z-index: 9999; /* Ensure it stays on top of other elements */
+  text-decoration: none; /* Remove underline */
+  animation: pulse 1.5s ease-in-out infinite, glow 1.5s ease-in-out infinite; /* Combined pulse & glow effect */
+}
+
+/* Call Icon Styling */
+.call-icon {
+  position: fixed;
+  bottom: 90px;  /* Adjust as needed to position below the WhatsApp icon */
+  right: 20px;   /* Adjust as needed */
+  background-color: #34b7f1; /* Call icon blue color */
+  border-radius: 50%;  /* Makes the icon circular */
+  width: 60px;        /* Set a fixed width */
+  height: 60px;       /* Set a fixed height to match the width */
+  display: flex;      /* Flexbox to center the icon */
+  align-items: center;  /* Center the icon vertically */
+  justify-content: center;  /* Center the icon horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  z-index: 9999; /* Ensure it stays on top of other elements */
+  text-decoration: none; /* Remove underline */
+  animation: pulse 1.5s ease-in-out infinite, glow-call 1.5s ease-in-out infinite; /* Combined pulse & glow effect */
+}
+
+/* Stylish Pulse animation (common for both) */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Slightly scale up */
+  }
+  100% {
+    transform: scale(1); /* Scale back to original size */
+  }
+}
+
+/* Stylish Glow effect (WhatsApp) */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.5); /* Soft glow */
+    background-color: #25D366; /* WhatsApp green */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.8); /* Stronger glow */
+    background-color: #20B957; /* Slightly darker green */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.5); /* Soft glow */
+    background-color: #25D366; /* WhatsApp green */
+  }
+}
+
+/* Stylish Glow effect (Call) */
+@keyframes glow-call {
+  0% {
+    box-shadow: 0 0 10px rgba(52, 183, 241, 0.5); /* Soft glow */
+    background-color: #34b7f1; /* Call icon blue */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(52, 183, 241, 0.8); /* Stronger glow */
+    background-color: #2a96c5; /* Slightly darker blue */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(52, 183, 241, 0.5); /* Soft glow */
+    background-color: #34b7f1; /* Call icon blue */
+  }
+}
+
+/* Hover effect (optional) */
+.whatsapp-icon:hover, .call-icon:hover {
+  transform: scale(1.1);
+  text-decoration: none; /* Remove underline on hover */
+}
+
