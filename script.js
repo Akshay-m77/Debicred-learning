@@ -12,14 +12,17 @@
         }).then(() => {
              
             status.textContent = "Success! Your message has been sent. We'll get back to you shortly.";
+            status.style.color = "green";
             document.getElementById("googleForm").reset();
         }).catch(() => {
+            status.style.color = "red"; 
             status.textContent = "Oops! Submission failed. Please try again or feel free to contact us directly.";
         });
 
         // Set a timeout fallback
         setTimeout(() => {
             if (status.textContent === "Submitting...") {
+                status.style.color = "red"; 
                 status.textContent = "Oops! Submission failed. Please try again or feel free to contact us directly.";
             }
         }, 4000);
