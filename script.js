@@ -4,8 +4,8 @@
         status.textContent = "Submitting...";
 
         const formData = new FormData(this);
-
-        fetch("https://docs.google.com/forms/d/e/1FAIpQLSf1UmH96X3J7pdv1gN1hwKX4xjTcbMtHcxBy_ZgctiEzhZ_CA/formResponse", {
+        
+        fetch("https://docs.google.com/forms/d/e/1FAIpQLSd_6HQUXasU1bra5WcxaR_shgQpGvxY6__tUZBcH4giDaB3fg/formResponse", {
             method: "POST",
             mode: "no-cors",
             body: formData
